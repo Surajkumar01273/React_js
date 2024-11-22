@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
 
-  // Used Hooks
+  // Usestate Hook
 
   const [length, setLength] = useState(8)
   const [numberAllowed, setnumberAlloud] = useState(false)
@@ -106,3 +106,4 @@ function App() {
 }
 
 export default App
+
