@@ -1,7 +1,7 @@
 {
   "name": "tour-app",
   "homepage": "https://<Surajkumar01273>.github.io/React-course/tree/main/tour-app",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
