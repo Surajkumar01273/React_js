@@ -4,7 +4,7 @@ import Card from './Card'
 function Tours({tours, removeTour}){
 
     return(
-        <div className='flex flex-col items-center justify-center mt-10'>
+        <div className='flex flex-col items-center mt-10'>
             <div>
                 <h2 className='font-bold text-2xl'>Plan for Tour</h2>
             </div>

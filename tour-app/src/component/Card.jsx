@@ -20,14 +20,14 @@ function Card({ id, image, info, price, name, removeTour}) {
                     <h4 className="text-green-500 font-bold">₹{price}</h4>
                     <h4 className="font-bold">{name}</h4>
                 </div>
-                <div>
+                <div className="text-sm sm:text-2xl xl:text-sm">
                     {description}
                     <span className="text-cyan-500 mr-1" onClick={redmoreHandler}>
                         {readmore ? `Show less` : `Read more`}
                     </span>
                 </div>
             </div>
-            <button className="bg-gray-500 font-medium p-1 rounded-md text-white px-3 ml-4" onClick={ () => removeTour(id)}>Not Interested</button>
+            <button className="bg-gray-500 font-medium p-1 rounded-md text-white px-3 ml-4 text-sm sm:text-lg" onClick={ () => removeTour(id)}>Not Interested</button>
         </div>
     )
 }

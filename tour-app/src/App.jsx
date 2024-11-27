@@ -14,9 +14,9 @@ function App() {
 
   if(tours.length===0){
     return(
-    <div className=''>
+    <div className='text-center text-xl p-4 inline-block md:mt-52 md:ml-[45%] ml-16'>
         <h1>No Tour Left</h1>
-        <button onClick={()=> setTours(data)}>Refresh</button>
+        <button className='bg-gray-500 p-1 text-white rounded-lg px-10 mt-2' onClick={()=> setTours(data)}>Refresh</button>
     </div>
     )
   }
