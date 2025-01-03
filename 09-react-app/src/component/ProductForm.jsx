@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ProductForm(){
+function ProductForm(props){
 
     // const [fullPorductInput, setfullProductinput] = useState({   // handle multiple state using  a single useState
     //     title: "",
@@ -37,7 +37,9 @@ function ProductForm(){
             title:newTitle,
             date:newDate
         }
-        console.log(productObject);
+        // console.log(productObject);
+
+        props.onSave(productObject)  // pass the child value through the props function.
 
         setnewTitle("");
         setnewDate("")

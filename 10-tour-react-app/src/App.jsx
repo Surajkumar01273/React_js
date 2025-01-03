@@ -7,6 +7,8 @@ function App() {
   const [tours, setTours] = useState(data)
   // console.log(data);
 
+//this function remove tour card itd function call im card component onclick button
+
   function removeTour(id){
     const newTours = tours.filter(tour => tour.id !== id) 
     setTours(newTours)

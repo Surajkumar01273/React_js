@@ -32,10 +32,18 @@ function App() {
     }
   ]
 
+  //  handle child data folllow through deeper way passing props functionn to access data.
+  function childDatahandle(data){
+    console.log("i am in side App.jsx");
+    
+    console.log(data);
+    
+  }
+
   return (
     <>
       <div>
-        <NewProduct />
+        <NewProduct pranay={childDatahandle} />
 
         <div className="bg-yellow-400 rounded-md w-80 mx-auto mt-10 p-6">
           <Product items={products} ></Product>
