@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Home = () => {
+const Home = ({isLogedIn}) => {
   return (
-    <div className='flex items-center justify-center text-white h-full'>
+    <div className='text-white'>
       Home Page
-      <div>
+      <div className=''>
         
       </div>
     </div>

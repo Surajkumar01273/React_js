@@ -7,12 +7,12 @@ const NavBar = (props) => {
 
     let isLogedIn = props.isLogedIn;
     let setIsLogedIn = props.setIsLogedIn;
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
 
     return (
 
-        <div className='flex justify-between items-center h-16 bg-gray-800 text-white font-semibold text-lg px-10'>
+        <div className='flex sticky top-0 justify-between items-center h-16 bg-gray-800 text-white font-semibold text-lg px-10'>
 
             {/* Create Logo */}
 
@@ -72,8 +72,8 @@ const NavBar = (props) => {
                     <Link to="/">
                         <button className='bg-gray-600 px-4 py-1 rounded-lg' onClick={() => {
                             setIsLogedIn(false)
-                            toast.success("Logged Out")
-                            // navigate('/');
+                            toast.success("Log Out")
+                            navigate('/');
 
                         }}>
                             Log Out
