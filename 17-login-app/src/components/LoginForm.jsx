@@ -64,7 +64,7 @@ const LoginForm = ({ setIsLogedIn }) => {
                         />
 
                         <span className='text-gray-300 absolute right-3 top-3' onClick={() => setShowPassword((prev) => !prev)}>
-                            {showPassword ? (<AiOutlineEyeInvisible font-size={18} />) : (<AiOutlineEye font-size={18} />)}
+                            {showPassword ? (<AiOutlineEyeInvisible size={18} />) : (<AiOutlineEye size={18} />)}
                         </span>
 
                         <Link to="#">
