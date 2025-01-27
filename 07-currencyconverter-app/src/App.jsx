@@ -6,14 +6,12 @@ import { useState } from 'react';
 function App() {
 
   const [amount, setAmount] = useState(0)
-  const [from, setFrom] = useState('usd')
+  const [from, setFrom] = useState('usd') 
   const [to, setTo] = useState('inr')
   const [convertedAmount, setConvertedAmount] = useState(0)
 
   const currencyInfo = useCurrencyInfo(from)
   const options = Object.keys(currencyInfo)
-  console.log('App log');
-  console.log(options);
   
   
   
@@ -60,7 +58,7 @@ function App() {
 
                 <button
                   type="button"
-                  className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2  hover:bg-gray-700 rounded-md bg-blue-600 text-white px-2 py-0.5"
+                  className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2  hover:bg-blue-900 rounded-md bg-blue-600 text-black px-4 py-2"
                   onClick={swap}
                   >
                   swap
@@ -82,7 +80,7 @@ function App() {
               </div>
 
               <button type="submit" className="w-full bg-blue-600 text-white font-bold hover:bg-gray-400 hover:text-black hover:transition-all-0.2 px-4 py-3 rounded-lg">
-                Convert {from.toUpperCase()} to {to.toUpperCase()}
+                Convert {from.toString().toUpperCase()} to {to.toString().toUpperCase()}
               </button>
 
             </form>
