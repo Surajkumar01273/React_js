@@ -5,7 +5,7 @@ import data from './data'
 
 function App() {
   const [tours, setTours] = useState(data)
-  // console.log(data);
+  
 
 //this function remove tour card itd function call im card component onclick button
 
